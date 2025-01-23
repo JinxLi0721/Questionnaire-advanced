@@ -4,8 +4,12 @@ import { RouterView } from "vue-router";
 
 <template>
     <RouterView />
-
-    <main></main>
 </template>
 
-<style scoped></style>
+<style scoped>
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+</style>
