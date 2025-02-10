@@ -1,33 +1,84 @@
 <script setup>
-import { ref, defineProps } from "vue";
-import { Modal } from "ant-design-vue";
+import { ref, reactive } from "vue";
+import { useUserStore } from "../stores/user";
+import { storeToRefs } from "pinia";
 const open = ref(false);
-const props = defineProps(['isLogin'])
+const props = defineProps(["isMember", "style"]);
+
+const userStore = useUserStore();
+const { errorMsg, loading, user } = storeToRefs(userStore);
+
+const userCredentials = reactive({
+    name: "",
+    email: "",
+    password: ""
+});
+
 const showModal = () => {
+    clearCredentials();
     open.value = true;
 };
-const hideModal = () => {
+const handleOk = async e => {
+    if (props.isMember) {
+        await userStore.handleLogin(userCredentials);
+    } else {
+        await userStore.handleSignup(userCredentials);
+    }
+    if (user.value) {
+        open.value = false;
+    }
+};
+
+const handleCancel = () => {
     open.value = false;
 };
 
-const title = (props.isLogin)? "登入": "註冊";
+const clearCredentials = () => {
+    userCredentials.name = "";
+    userCredentials.email = "";
+    userCredentials.password = "";
+    userStore.clearErrorMsg();
+    loading.value = false;
+};
 
+const title = props.isMember ? "登入" : "註冊";
 </script>
 
 <template>
-    <div>
-        <a-button type="text" @click="showModal">{{title}}</a-button>
-        <a-modal v-model:open="open" :title="title" ok-text="確定" cancel-text="取消" @ok="hideModal">
-            <a-input class="auth-input" v-if="!props.isLogin" v-model:value="value" placeholder="名稱" />
-            <a-input class="auth-input" v-model:value="value" placeholder="信箱" />
-            <a-input class="auth-input" v-model:value="value" placeholder="密碼" />
-        </a-modal>
+    <div class="right-content">
+        <a-button :type="props.style" @click="showModal">{{ title }}</a-button>
     </div>
+    <a-modal v-model:open="open" :title="title">
+        <template #footer>
+            <a-button key="back" @click="handleCancel">取消</a-button>
+            <a-button key="submit" type="primary" :loading="loading" @click="handleOk">確定</a-button>
+        </template>
+        <div v-if="!loading">
+            <a-input
+                class="auth-input"
+                v-if="!props.isMember"
+                v-model:value="userCredentials.name"
+                placeholder="名稱"
+            />
+            <a-input class="auth-input" v-model:value="userCredentials.email" placeholder="信箱" />
+            <a-input class="auth-input" v-model:value="userCredentials.password" placeholder="密碼" />
+        </div>
+        <div class="spinner" v-else>
+            <a-spin size="large" />
+        </div>
+        <a-typography-text type="danger">{{ errorMsg }}</a-typography-text>
+    </a-modal>
 </template>
 
 <style scoped>
 .auth-input {
     margin-top: 4px;
     margin-bottom: 3px;
+}
+.right-content {
+    margin-right: 10px;
+}
+.spinner {
+    text-align: center;
 }
 </style>

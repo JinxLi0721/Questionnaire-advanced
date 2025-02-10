@@ -17,7 +17,6 @@
     height: 800px;
     top: 0;
     left: 0;
-    position: fixed;
     z-index: -1;
 }
 </style>
