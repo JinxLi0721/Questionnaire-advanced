@@ -1,4 +1,4 @@
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import { defineStore } from "pinia";
 import { supabase } from "../supabase";
 
@@ -14,14 +14,12 @@ export const useUserStore = defineStore("users", () => {
     }
 
     const handleLogin = async credential => {
+        let response = {};
         const { email, password } = credential;
-        if (!validEmail(email)) {
-            return (errorMsg.value = "信箱錯誤");
+        if (!validEmail(email) || !password.length) {
+            return (errorMsg.value = "信箱或密碼有誤");
         }
 
-        if (!password.length) {
-          return (errorMsg.value = "密碼長度過短");
-      }
         loading.value = true;
 
         const { error } = await supabase.auth.signInWithPassword(credential);
@@ -30,17 +28,32 @@ export const useUserStore = defineStore("users", () => {
             return (errorMsg.value = error.message);
         }
 
-        const { data: loginUser } = await supabase.from("userprofile").select().eq("email", email).single();
+        // const { data: loginUser } = await supabase.from("userprofile").select().eq("email", email).single();
+        const { data: loginUser } = await supabase.auth.getUser();
+
+        if (!loginUser.user) {
+            loadingUser.value = false;
+            return (user.value = null);
+        }
 
         user.value = {
-            id: loginUser.id,
-            email: loginUser.email,
-            name: loginUser.name
+            id: loginUser.user.id,
+            email: loginUser.user.email,
+            name: loginUser.user.user_metadata.full_name
         };
+        // user.value = {
+        //     id: loginUser.id,
+        //     email: loginUser.email,
+        //     name: loginUser.name
+        // };
 
-        
         loading.value = false;
         errorMsg.value = "";
+
+        return (response = {
+            success: true,
+            data: user
+        });
     };
     const handleSignup = async credential => {
         const { name, email, password } = credential;
@@ -65,7 +78,15 @@ export const useUserStore = defineStore("users", () => {
             return (errorMsg.value = "使用者已註冊");
         }
 
-        const { error } = await supabase.auth.signUp(credential);
+        const { error } = await supabase.auth.signUp({
+            email: credential.email,
+            password: credential.password,
+            options: {
+                data: {
+                    full_name: credential.name
+                }
+            }
+        });
 
         if (error) {
             loading.value = false;
@@ -85,41 +106,67 @@ export const useUserStore = defineStore("users", () => {
         };
         loading.value = false;
         errorMsg.value = "";
-
-
     };
     const handleLogout = async () => {
-
-      await supabase.auth.signOut();
-      user.value = null;
+        await supabase.auth.signOut();
+        user.value = null;
     };
     const getUser = async () => {
-      loadingUser.value = true;
+        loadingUser.value = true;
 
-      const {data}  = await supabase.auth.getUser();
+        const { data } = await supabase.auth.getUser();
 
-      if(!data.user) {
+        if (!data.user) {
+            loadingUser.value = false;
+            return (user.value = null);
+        }
+        const { data: userWithEmail } = await supabase
+            .from("userprofile")
+            .select()
+            .eq("email", data.user.email)
+            .single();
+
+        //   user.value = {
+        //     email: userWithEmail.email,
+        //     name: userWithEmail.name,
+        //     id: userWithEmail.id
+        //   }
+        const name = data.user.user_metadata.full_name ? data.user.user_metadata.full_name : "aa";
+        user.value = {
+            email: data.user.email,
+            id: data.user.id,
+            name: name
+        };
+
         loadingUser.value = false;
-        return user.value = null;
-      }
-      
-      const {data: userWithEmail} =  await supabase.from("userprofile").select().eq("email", data.user.email).single();
-     
-      
+    };
 
-      user.value = {
-        email: userWithEmail.email,
-        name: userWithEmail.name,
-        id: userWithEmail.id
-      }
-
-      loadingUser.value = false;
-
+    const updateUser = async credential => {
+        const { name } = credential;
+        if (!name) {
+            return (errorMsg = "不能為空");
+        }
+        const { data, error } = await supabase.auth.updateUser({
+            data: {
+                full_name: name
+            }
+        });
     };
 
     const clearErrorMsg = () => {
         errorMsg.value = "";
     };
 
-    return { user, errorMsg, loading, loadingUser, handleLogin, handleSignup, handleLogout, getUser, clearErrorMsg };
+    return {
+        user,
+        errorMsg,
+        loading,
+        loadingUser,
+        handleLogin,
+        handleSignup,
+        handleLogout,
+        getUser,
+        clearErrorMsg,
+        updateUser
+    };
 });
