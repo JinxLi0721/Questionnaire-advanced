@@ -1,0 +1,1237 @@
+[{
+    "_id":"66973d80a2f3a45418f8e6ca",
+    "title":"孤獨量表",
+	"image":"chatting-1-14.png",
+    "explain":"孤獨感通常是指一個人在與外界隔離或缺乏伴侶下，所產生的帶有焦慮感、自認為孤伶的複雜的苦悶情緒。/但是孤獨感屬主觀的，因此一個人即使是身旁有許多其他人時，仍可以感覺到寂寞；孤獨感甚至會發生在有良好的婚姻關係、家庭背景、和事業的人身上。/產生孤獨感的原因，除了和個性有關之外，則是包括社會、心理、和情緒等多樣化的情境誘因。隨著社會的現代化，孤獨似乎已經愈演愈烈。/本問券參考UCLA第三版孤獨量表，一起來檢測自己的孤獨困擾！",
+    "instructions":"下列是人們有時出現的一些感受。對每項描述，請指出你具有那種感覺的頻率。舉例如下: 你常感覺幸福嗎? 如你從未感到幸福，你應回答「從來沒有」；如一直都是感覺到幸福，應回答「常常如此」， 以此類推。",
+    "references":["https://www.tip.org.tw/"," https://tongren-1303189886.cos.ap-guangzhou.myqcloud.com/2021/10/2021100902464978.pdf", "http://cfh.com.tw/Home.aspx"],
+    "isPublish" : true,
+    "totalGrades":80,
+    "grades" : [
+		{
+			"gradesRange" : {
+				"min" : 20,
+				"max" : 28
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "你目前感覺良好，孤獨感較少。你可能有穩定的社交圈和支援系統，能夠在需要時與朋友或家人交流，並保持心情平衡。偶爾感到孤獨是正常的，但這並未對你的生活造成顯著的影響。",
+			"statisticsStatus" : "低度孤獨",
+            "suggestion":"持續保持與他人的良好聯繫，參加社交活動，並與重要的人保持互動。這樣可以幫助你維持健康的心理狀態。同時也可以探索新的興趣，結交更多志趣相投的朋友。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 29,
+				"max" : 33
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : " 你偶爾會感到孤獨，可能有時候會覺得缺乏足夠的社交聯繫或支持。但這種孤獨感還未嚴重影響你的生活，你還是能夠享受一些社交活動和日常生活中的快樂。",
+			"statisticsStatus" : "中低度孤獨",
+            "suggestion":"如果你覺得需要更多的連結，試著主動與朋友或家人聯繫，尋找新的社交機會。參加社交或團體活動、學習新技能，也能增加你與他人的互動機會，從其中獲得支持。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 34,
+				"max" : 39
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "你常常感到孤獨，可能覺得自己難以找到能夠深入交流的朋友，或者感覺自己與他人之間有隔閡。這種孤獨感或許開始影響到你的情緒和生活品質。",
+			"statisticsStatus" : "中度孤獨",
+            "suggestion": "考慮探索如何增進人際關係，尋找與你志趣相投的人。參與興趣小組或社區活動能幫助你建立深厚的社交連結。如果孤獨感持續影響你的生活，向專業人士尋求建議也不失為一個選擇。"
+		},{
+			"gradesRange" : {
+				"min" : 40,
+				"max" : 44
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "你疑似有中重度孤獨感的隱憂，需要格外留意了！在人際互動中，孤獨可能已經影響你的生活，你經常會覺得「沒有人理解我」，自己難與他人親近，身邊沒有知心朋友，並且經常出現自己孤身一人，沒有人可以幫你的感受，有時也因此感到沮喪、焦慮與無助。",
+			"statisticsStatus" : "中高度孤獨",
+            "suggestion":"現在是時候認真對待這種孤獨感，嘗試與身邊的人進行開放的溝通，表達你的感受，或參加支持小組，尋求他人的理解與支持。如果孤獨感持續，建議你考慮尋找心理諮詢或輔導，來更好地處理這些情緒。"
+		},{
+			"gradesRange" : {
+				"min" : 45,
+				"max" : 80
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "你疑似有重度孤獨感的隱憂，似乎到危險警戒程度了！在人際互動中，孤獨已經影響你的生活，你總是覺得「沒有人理解我」，自己也難與他人親近，身邊沒有知心朋友，並且覺得自己總是孤身一人，沒有人可以幫你，甚至為此感到沮喪、焦慮與無助。",
+			"statisticsStatus" : "高度孤獨",
+            "suggestion":"高度孤獨感是一個值得重視的警訊，建議你立即尋求專業的心理幫助，與心理輔導員或心理師進行溝通，探討如何有效地面對和緩解這種孤獨感。你也可以嘗試與信任的人分享你的感受，或參加心理健康相關的支持小組。"
+		}
+	],
+    "questions": [
+        {
+            "description":"你覺得自己與周圍人的關係和睦嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        },
+        {
+            "description":"你常感覺缺少陪伴嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到沒人可以信賴嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到孤單嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你覺得自己屬於朋友們中的一員嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到與周圍的人有許多共同點嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到與任何人都不親近了嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到你的興趣與想法與周圍的人不一樣嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到想要與人來往、結交朋友嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你覺得自己與人親近嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到被人冷落嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到你與別人來往毫無意義嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到沒有人很瞭解你嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到被其他人孤立嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到在需要的時候能夠找到人陪伴嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到有人真正瞭解你嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到害羞嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到即使身邊有人在，但他們並不關心你嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 1,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 4,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到自己有可以傾訴的人嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }, {
+            "description":"你常感到有人能信賴並可以向他求助嗎",
+            "questionType" : "select",
+            "options" : [
+				{
+					"description" : "從來没有",
+					"score" : 4,
+					"standardValue" : "從來没有"
+				},
+				{
+					"description" : "很少如此",
+					"score" : 3,
+					"nutritionSuggest" : "建議找親友談談，抒發情緒"
+				},
+				{
+					"description" : "有時如此",
+					"score" : 2,
+					"nutritionSuggest" : "建議尋求心理衛生或精神醫療專業諮詢"
+				},
+				{
+					"description" : "常常如此",
+					"score" : 1,
+					"nutritionSuggest" : "建議尋求精神醫療專業諮詢"
+				}
+			]
+        }
+    ]
+    
+},{
+    "_id":"668f4d9233827e104a855fc6",
+    "title":"迷你營養評估",
+	"image":"salad-77.png",
+    "explain":"用於評估長者的營養狀況，可自填或者詢問觀察個案、家人，主要參考迷你營養評估量表(MNA)。",
+    "instructions":"請根據每個問題，回答近一個月的身體狀況。",
+    "references":["https://wwwfs.vghks.gov.tw/001/VghksUploadFiles/325/relfile/0/9375/0b9abd11-c006-45da-977e-ee2d2ca68fc2.pdf"],
+    "isPublish" : true,
+    "totalGrades":30,
+    "grades" : [
+        {
+			"gradesRange" : {
+				"min" : 12,
+				"max" : 14
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "建議每年定期再篩檢一次。",
+			"statisticsStatus" : "營養正常"
+		},
+		{
+			"gradesRange" : {
+				"min" : 8,
+				"max" : 11
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "若有體重減輕，應尋求營養師進行營養諮詢。",
+			"statisticsStatus" : "營養不良風險"
+		},
+		{
+			"gradesRange" : {
+				"min" : 0,
+				"max" : 7
+			},
+			"status" : "異常",
+			"statusCode" : -2,
+			"description" : "建議密切監測體重，尋求營養師進一步營養諮詢。",
+			"statisticsStatus" : "營養不良"
+		}],
+    "questions": [
+        {
+            "description":"過去三個月內有沒有因食慾不振、消化問題、咀嚼或吞嚥困難而減少進食量？",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "嚴重食慾不佳",
+					"score" : 0,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 2,
+					"description" : "中度食慾不佳",
+					"score" : 1,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 3,
+					"description" : "食慾無變化",
+					"score" : 2,
+					"standardValue" : "食慾無變化"
+				}
+			]
+        },
+        {
+            "description":"近三個月體重減輕的情況",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "體重減輕 ＞ 3 公斤",
+					"score" : 0,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 2,
+					"description" : "不知道",
+					"score" : 1,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 3,
+					"description" : "體重減輕 1 ~ 3 公斤",
+					"score" : 2,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 4,
+					"description" : "體重沒有減輕",
+					"score" : 3,
+					"standardValue" : "體重沒有減輕"
+				}
+			]
+        }, {
+            "description":"活動能力",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "需要長期臥床或坐輪椅",
+					"score" : 0
+				},
+				{
+					"options" : 2,
+					"description" : "可以下床或離開輪椅，但無法外出",
+					"score" : 1
+				},
+				{
+					"options" : 3,
+					"description" : "可以外出",
+					"score" : 2,
+					"standardValue" : "可以外出"
+				}
+			]
+        }, {
+            "description":"近三個月有沒有受到心理創傷或急性疾病？",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "有",
+					"score" : 0,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 2,
+					"description" : "沒有",
+					"score" : 2,
+					"standardValue" : "沒有"
+				}
+			]
+        }, {
+            "description":"有沒有精神心理問題",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "嚴重失智或憂鬱",
+					"score" : 0,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 2,
+					"description" : "輕度失智",
+					"score" : 1,
+					"nutritionSuggest" : "請諮詢營養師或家庭醫師"
+				},
+				{
+					"options" : 3,
+					"description" : "沒有精神心理問題",
+					"score" : 2,
+					"standardValue" : "沒有精神心理問題"
+				}
+			]
+        }, {
+            "description":"身體質量指數BMI",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "BMI ＜ 19",
+					"score" : 0
+				},
+				{
+					"options" : 2,
+					"description" : "19 ≦ BMI ＜ 21",
+					"score" : 1
+				},
+				{
+					"options" : 3,
+					"description" : "21 ≦ BMI ＜ 23",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "BMI ≧ 23",
+					"score" : 3
+				}
+			]
+        }
+    ]
+    
+}, {
+    "_id":"668f3da1166f1af15a3cd750",
+    "title":"WHO-5幸福指標量表",
+	"image":"family-2-69.png",
+    "explain":"這是一個簡單但有效的工具，用來評估您在過去兩週內的整體情緒狀態和幸福感。透過五個簡單的問題，您可以快速了解自己在情緒、精力、日常生活中的滿足感等方面的感受。/【為什麼這很重要】/幸福感不僅影響您的心情，也會對生活的各個方面產生深遠的影響，例如身心健康、人際關係和工作表現。/通過這個測驗，您可以更好地了解自己的心理狀態，並在需要時找到改善幸福感的方法。/【這份量表適合誰】/無論您感覺自己狀態良好，還是偶爾感到壓力與低落，這份測驗都能幫助您發現自己當下的幸福感水平，並提供有價值的建議來提升生活品質。/完成這份問卷只需幾分鐘時間，透過它，您將能夠更好地認識自己，並找到調整心情與改善生活的方法。現在就開始測驗，看看您的幸福感達到什麼程度吧！",
+    "instructions":"請針對以下五個句子，選出在過去兩週中最接近您的感受。請注意數字越高代表愈幸福。例如：如果在過去兩週內，有一半以上的時間，您感到愉悅且很有精神，請選擇第三格【一半以上的時間】。",
+    "references":["WHO. (1998). Wellbeing Measures in Primary Health Care/The Depcare Project. WHO Regional Office for Europe: Copenhagen." , "https://www.who.int/zh/publications/m/item/WHO-UCN-MSD-MHE-2024.01"],
+    "isPublish" : true,
+    "totalGrades":25,
+    "grades" : [
+        {
+			"gradesRange" : {
+				"min" : 0,
+				"max" : 13
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "你的生活品質顯著偏低，情緒可能持續低落，並且感到非常無力與沮喪。日常生活中很難找到快樂和滿足感，可能有明顯的疲憊感與壓力。",
+			"statisticsStatus" : "幸福感非常低落",
+			"suggestion":"建議你進一步檢測憂鬱症的相關指標（如 ICD-10 憂鬱症量表），並考慮尋求專業心理協助。你可以閱讀《也許你該找人聊聊》或者《擁抱你的內在家庭》，這些書這有助於你了解如何釋放壓力，並嘗試與信任的朋友或家人分享你的煩惱。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 14,
+				"max" : 28
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "你的生活品質低於平均，偶爾會感到情緒不佳，並可能有時感覺壓力過大。儘管你可能偶爾會有快樂的時刻，但這些情緒波動難以持續。",
+			"statisticsStatus" : "幸福感偏低",
+			"suggestion":"建議你花時間關注自己的心理健康，進行一些放鬆或減壓的活動。嘗試進行輕度運動、冥想或從事興趣愛好，這能夠幫助提升幸福感。若這種情況持續，考慮尋求專業協助。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 29,
+				"max" : 52
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "你的幸福感處於中等水平，生活中有時能感受到滿足感，但仍存在某些壓力和疲憊感。你的生活狀態並不差，但可能偶爾感到有些缺乏動力。",
+			"statisticsStatus" : "中等幸福感",
+			"suggestion":"建議你繼續保持積極的生活習慣，同時尋找新的興趣來增強幸福感。可以嘗試設定一些短期的目標來提升成就感，或加入一些社交活動以減少壓力。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 53,
+				"max" : 72
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "你的幸福感處於較高水平，能夠感受到生活中的愉悅與滿足。儘管偶爾會有壓力，但你有能力調整自己的情緒，並擁有一定的生活動力",
+			"statisticsStatus" : "幸福感較高",
+			"suggestion":"繼續保持你當前的積極狀態，同時可以更多地參與讓你感到興趣的活動或挑戰！增強與他人的社交聯繫，也能進一步提升你的幸福感。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 73,
+				"max" : 100
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : " 你擁有極佳的生活品質，感覺情緒穩定且積極，日常生活中充滿活力與滿足感。你很容易從生活中找到快樂，並擁有健康的身心狀態。",
+			"statisticsStatus" : "幸福感極高",
+			"suggestion":"繼續享受你的生活並保持這種積極的狀態！你可以將這份正能量傳遞給周圍的人，並嘗試新的挑戰或目標來進一步豐富你的生活。也可以考慮參與志工活動，分享你的快樂與正能量。"
+		}],
+    "questions": [
+        {
+            "description":"我感到情緒開朗且精神不錯。",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "全部的時間",
+					"score" : 5
+				},
+				{
+					"options" : 2,
+					"description" : "大部分的時間",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "一半以上的時間",
+					"score" : 3
+				},
+				{
+					"options" : 4,
+					"description" : "少於一半的時間",
+					"score" : 2
+				},
+				{
+					"options" : 5,
+					"description" : "有時候",
+					"score" : 1
+				},
+				{
+					"options" : 6,
+					"description" : "從來沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"我感到心情平靜和放鬆。",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "全部的時間",
+					"score" : 5
+				},
+				{
+					"options" : 2,
+					"description" : "大部分的時間",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "一半以上的時間",
+					"score" : 3
+				},
+				{
+					"options" : 4,
+					"description" : "少於一半的時間",
+					"score" : 2
+				},
+				{
+					"options" : 5,
+					"description" : "有時候",
+					"score" : 1
+				},
+				{
+					"options" : 6,
+					"description" : "從來沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"我感到有活力且精力充沛。",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "全部的時間",
+					"score" : 5
+				},
+				{
+					"options" : 2,
+					"description" : "大部分的時間",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "一半以上的時間",
+					"score" : 3
+				},
+				{
+					"options" : 4,
+					"description" : "少於一半的時間",
+					"score" : 2
+				},
+				{
+					"options" : 5,
+					"description" : "有時候",
+					"score" : 1
+				},
+				{
+					"options" : 6,
+					"description" : "從來沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"我醒來感到神清氣爽並有充分休息。",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "全部的時間",
+					"score" : 5
+				},
+				{
+					"options" : 2,
+					"description" : "大部分的時間",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "一半以上的時間",
+					"score" : 3
+				},
+				{
+					"options" : 4,
+					"description" : "少於一半的時間",
+					"score" : 2
+				},
+				{
+					"options" : 5,
+					"description" : "有時候",
+					"score" : 1
+				},
+				{
+					"options" : 6,
+					"description" : "從來沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"我的日常生活中充滿讓我感興趣的事物。",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "全部的時間",
+					"score" : 5
+				},
+				{
+					"options" : 2,
+					"description" : "大部分的時間",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "一半以上的時間",
+					"score" : 3
+				},
+				{
+					"options" : 4,
+					"description" : "少於一半的時間",
+					"score" : 2
+				},
+				{
+					"options" : 5,
+					"description" : "有時候",
+					"score" : 1
+				},
+				{
+					"options" : 6,
+					"description" : "從來沒有",
+					"score" : 0
+				}
+			]
+        }
+    ]
+},{
+    "_id":"66974343a2f3a45418f8e6cb",
+    "title":"簡式健康量表（BSRS-5）",
+	"image":"mountain-1-34.png",
+    "explain":"這是為探尋心理衛生需求的篩檢工具簡式健康量表，又名「心情溫度計」， 全名為 Brief Symptom Rating Scale，簡稱 BSRS-5，是由臺大李明濱教授等人所發展。通過五個關於睡眠、緊張、心情等問題，這個量表能快速幫助您了解自己的心理健康情況。/【為什麼這很重要】/心理健康對於我們的生活質量至關重要。無論是輕度的情緒困擾，還是嚴重的情緒問題，及時的評估和干預都能夠改善身心適應狀況，幫助您更好地應對日常生活中的壓力。/【這份量表適合誰】/如果您最近感覺情緒起伏大、壓力過大、睡眠不佳或容易焦慮，這份量表可以幫助您快速了解自己的心理狀況，並提供具體的建議。對於那些已經在應對情緒困擾的人，這也是一個有效的自我檢視工具，幫助您更好地掌握自己的心理健康狀況。/這個測驗僅需幾分鐘時間，現在就開始檢視自己的心理健康狀態，了解如何更好地照顧自己的身心吧！",
+    "instructions":"下列所舉的問題是為協助您瞭解您的身心適應狀況，請您仔細回想在最近一星期中(包括今天)，這些問題使您感到困擾或苦惱的程度，然後勾選一個您認為最能代表您感覺的答案。",
+    "references":["https://www2.ndmctsgh.edu.tw/newwebreg/Images/%E8%A1%9B%E7%94%9F%E5%B1%80%E7%B0%A1%E5%BC%8F%E5%81%A5%E5%BA%B7%E9%87%8F%E8%A1%A8.pdf","https://www1.cgmh.org.tw/suicidelnk/%E6%83%85%E7%B7%92%E6%AA%A2%E6%B8%AC/%E6%83%85%E7%B7%92%E6%AA%A2%E6%B8%AC.html"],
+    "isPublish" : true,
+    "totalGrades":24,
+    "grades" : [
+        {
+			"gradesRange" : {
+				"min" : 15,
+				"max" : 24
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "你的生活品質顯著偏低，情緒可能持續低落，並且感到非常無力與沮喪。日常生活中很難找到快樂和滿足感，可能有明顯的疲憊感與壓力。",
+			"statisticsStatus" : "重度情緒困擾",
+			"suggestion":" 建議您儘快尋求專業的精神科治療或輔導，這樣可以更好地處理您的情緒問題。尋找適合的專業人員，與他們討論您的困擾與需求，獲取專業的協助和支持。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 10,
+				"max" : 14
+			},
+			"status" : "異常",
+			"statusCode" : -1,
+			"description" : "您面臨中度的情緒困擾，可能會感到憂鬱、緊張或易怒，這些情緒對您的生活造成了一定的影響。",
+			"statisticsStatus" : "中度情緒困擾",
+			"suggestion":" 建議您尋求心理諮詢或專業幫助，與心理專業人士討論您的情緒狀態，這樣可以獲得專業的建議和支持。及早尋求幫助有助於改善您的情況。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 6,
+				"max" : 9
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : " 您可能會感到一些情緒上的困擾，偶爾有睡眠問題或焦慮感。雖然這些困擾不會對您的日常生活造成重大影響，但建議您加以注意。",
+			"statisticsStatus" : "輕度情緒困擾",
+			"suggestion":"建議您找信任的家人或朋友談談，分享您的感受，這樣可以獲得情緒支持。可以嘗試一些放鬆技巧，如深呼吸或瑜伽，幫助舒緩情緒。"
+		},
+		{
+			"gradesRange" : {
+				"min" : 0,
+				"max" : 5
+			},
+			"status" : "正常",
+			"statusCode" : 1,
+			"description" : "您的身心狀況良好，最近一周中幾乎沒有感到困擾或苦惱。您能夠適應日常生活的挑戰，情緒穩定，整體心理健康狀況良好。",
+			"statisticsStatus" : "身心適應狀況良好",
+			"suggestion":"繼續保持這種積極的心態，並定期檢視自己的情緒狀態。若遇到生活上的壓力，可以主動尋找有效的應對方法，如運動、冥想或與朋友分享。"
+		}],
+    "questions": [
+        {
+            "description":"睡眠困難，譬如難以入睡、易醒或早醒",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"感覺緊張不安",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"覺得容易苦惱或動怒",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"感覺憂鬱、心情低落",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"覺得比不上別人",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        },{
+            "description":"有自殺的想法",
+            "questionType" : "select",
+            "options" : [
+				{
+					"options" : 1,
+					"description" : "非常厲害",
+					"score" : 4,
+					"extraSuggest":"無論前五題的總分是多少，因為您於最後一題選擇【非常厲害】，因此建議您立即尋求專業協助。這表明您可能正經歷嚴重的情緒低落或絕望感。向心理專業人士或醫療機構尋求協助，可以幫助您度過這段困難時期，與身邊的信任親友分享您的困擾和感受，不要獨自面對這些情緒。"
+				},
+				{
+					"options" : 3,
+					"description" : "厲害",
+					"score" : 4,
+					"extraSuggest":"無論前五題的總分是多少，因為您於最後一題選擇【厲害】，因此建議您立即尋求專業協助。這表明您可能正經歷嚴重的情緒低落或絕望感。向心理專業人士或醫療機構尋求協助，可以幫助您度過這段困難時期，與身邊的信任親友分享您的困擾和感受，不要獨自面對這些情緒。"
+				},
+				{
+					"options" : 3,
+					"description" : "中等程度",
+					"score" : 2,
+					"extraSuggest":"無論前五題的總分是多少，因為您於最後一題選擇【中等程度】，因此建議您立即尋求專業協助。這表明您可能正經歷難以承受的情緒低落或絕望感。向心理專業人士或醫療機構尋求協助，可以幫助您度過這段困難時期，與身邊的信任親友分享您的困擾和感受，不要獨自面對這些情緒。"
+				},
+				{
+					"options" : 4,
+					"description" : "輕微",
+					"score" : 1
+				},
+				{
+					"options" : 5,
+					"description" : "完全沒有",
+					"score" : 0
+				}
+			]
+        }
+    ]
+    
+}]

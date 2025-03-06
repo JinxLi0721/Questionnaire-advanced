@@ -8,6 +8,7 @@ const props = defineProps(["isMember", "style"]);
 const userStore = useUserStore();
 const { errorMsg, loading, user } = storeToRefs(userStore);
 
+const emit = defineEmits(['loginSuccess']);
 const userCredentials = reactive({
     name: "",
     email: "",
@@ -20,7 +21,8 @@ const showModal = () => {
 };
 const handleOk = async e => {
     if (props.isMember) {
-        await userStore.handleLogin(userCredentials);
+        const res =  await userStore.handleLogin(userCredentials);
+        emit('loginSuccess', res)
     } else {
         await userStore.handleSignup(userCredentials);
     }
@@ -45,7 +47,7 @@ const title = props.isMember ? "登入" : "註冊";
 </script>
 
 <template>
-    <div class="right-content">
+    <div class="margin-right">
         <a-button :type="props.style" @click="showModal">{{ title }}</a-button>
     </div>
     <a-modal v-model:open="open" :title="title">
@@ -75,7 +77,7 @@ const title = props.isMember ? "登入" : "註冊";
     margin-top: 4px;
     margin-bottom: 3px;
 }
-.right-content {
+.margin-right {
     margin-right: 10px;
 }
 .spinner {

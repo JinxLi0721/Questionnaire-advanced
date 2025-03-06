@@ -4,10 +4,7 @@ import Cover from "../components/Cover.vue";
 import CoverBtn from "@/components/CoverBtn.vue";
 import CoverTitle from "@/components/CoverTitle.vue";
 import Content from "@/components/Content.vue";
-import CardsContent from '@/components/CardsContent.vue';
-
 </script>
-
 <template>
     <div class="cover-container">
         <Nav></Nav>
@@ -18,11 +15,11 @@ import CardsContent from '@/components/CardsContent.vue';
     </div>
     <div class="content-container">
         <!-- <CardsContent/> -->
-        <Content/>
+        <Content />
     </div>
 </template>
 <style scoped>
-.cover-container{
+.cover-container {
     padding: 0;
     margin: 0;
 }
