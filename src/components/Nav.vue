@@ -125,12 +125,8 @@ const handleOk = async () => {
     margin-left: 10px;
     text-decoration: none;
 }
-.right-content {
-    display: flex;
-    align-items: center;
-}
 .right-content button {
-    margin-right: 10px;
+    padding: 0 10px;
 }
 
 .nav-button {
