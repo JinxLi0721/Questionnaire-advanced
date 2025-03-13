@@ -1,20 +1,23 @@
 <script setup>
 import Nav from "../components/Nav.vue";
-import Cover from "../components/Cover.vue";
-import CoverBtn from "@/components/CoverBtn.vue";
-import CoverTitle from "@/components/CoverTitle.vue";
+import CoverSlot from "../components/CoverSlot.vue";
+import CoverBtnSlot from "@/components/CoverBtnSlot.vue";
 import Content from "@/components/Content.vue";
 </script>
+
 <template>
     <div class="cover-container">
         <Nav></Nav>
-        <Cover>
-            <CoverTitle />
-            <CoverBtn />
-        </Cover>
+        <CoverSlot :from="'Home'">
+            <template #cover-title>
+                <p>免費心理檢測評估</p>
+            </template>
+            <CoverBtnSlot>
+                <template #start> 開始測驗 </template>
+            </CoverBtnSlot>
+        </CoverSlot>
     </div>
     <div class="content-container">
-        <!-- <CardsContent/> -->
         <Content />
     </div>
 </template>

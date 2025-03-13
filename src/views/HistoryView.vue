@@ -1,8 +1,7 @@
 <script setup>
 import Nav from "../components/Nav.vue";
-import Cover from "../components/Cover.vue";
-import CoverBtn from "@/components/CoverBtn.vue";
-import CoverTitle from "@/components/CoverTitle.vue";
+import CoverSlot from "../components/CoverSlot.vue";
+import CoverBtnSlot from "@/components/CoverBtnSlot.vue";
 import Content from "@/components/Content.vue";
 import HistoryTab from "@/components/HistoryTab.vue";
 </script>
@@ -10,10 +9,14 @@ import HistoryTab from "@/components/HistoryTab.vue";
 <template>
     <div class="cover-container">
         <Nav></Nav>
-        <Cover>
-            <CoverTitle />
-            <CoverBtn />
-        </Cover>
+        <CoverSlot>
+            <template #cover-title>
+                <p>透過記錄了解自己</p>
+            </template>
+            <CoverBtnSlot>
+                <template #start>查看紀錄</template>
+            </CoverBtnSlot>
+        </CoverSlot>
     </div>
     <div class="content-container">
         <Content>

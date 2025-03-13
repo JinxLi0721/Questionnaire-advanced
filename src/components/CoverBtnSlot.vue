@@ -3,16 +3,18 @@ import { DownOutlined } from "@ant-design/icons-vue";
 
 const scrollToCard = () => {
     window.scrollTo({
-        top:900,
-        left:0,
-        behavior:"smooth"
-    })
-}
+        top: 900,
+        left: 0,
+        behavior: "smooth"
+    });
+};
 </script>
 
 <template>
     <div class="cover-btn-container">
-        <a-button type="ghost" size="large" shape="round" @click="scrollToCard"> 開始測驗 </a-button>
+        <a-button type="ghost" size="large" shape="round" @click="scrollToCard" class="start"
+            ><slot name="start"></slot>
+        </a-button>
         <a-button type="ghost" shape="round" @click="scrollToCard">
             <template #icon>
                 <DownOutlined />
