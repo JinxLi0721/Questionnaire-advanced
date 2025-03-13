@@ -25,10 +25,8 @@ const router = createRouter({
     ]
 });
 router.beforeEach((to, from, next) => {
-    console.log("to=", to.fullPath, "| from=", from.fullPath);
     if (
         to.matched.some(record => {
-            console.log(record.name, record.meta.requiresAuth);
             return record.meta.requiresAuth;
         })
     ) {

@@ -63,7 +63,6 @@ const onLoginSuccess = res => {
         </div>
     </div>
 
-    <!--  class="member-modal" -->
     <a-modal v-model:open="openMemberModal" title="成為會員" :footer="null">
         <div class="flex-content">
             <AuthModal :isMember="false" :style="'primary'" @loginSuccess="onLoginSuccess"></AuthModal>

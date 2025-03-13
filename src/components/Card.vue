@@ -1,6 +1,5 @@
 <script setup>
-import { SlackOutlined } from "@ant-design/icons-vue";
-import { ref, defineProps, watch, reactive } from "vue";
+import { ref, defineProps } from "vue";
 import { storeToRefs } from "pinia";
 
 import { useUserStore } from "@/stores/user";

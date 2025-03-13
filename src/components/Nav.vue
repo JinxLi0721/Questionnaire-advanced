@@ -19,10 +19,10 @@ const formState = reactive({
     email: ""
 });
 const onFinish = values => {
-    console.log("Success:", values);
+    errorMsg.value = values;
 };
 const onFinishFailed = errorInfo => {
-    console.log("Failed:", errorInfo);
+    errorMsg.value = errorInfo;
 };
 
 const headerStyle = {

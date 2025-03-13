@@ -120,11 +120,11 @@ export const useUserStore = defineStore("users", () => {
             loadingUser.value = false;
             return (user.value = null);
         }
-        const { data: userWithEmail } = await supabase
-            .from("userprofile")
-            .select()
-            .eq("email", data.user.email)
-            .single();
+        // const { data: userWithEmail } = await supabase
+        //     .from("userprofile")
+        //     .select()
+        //     .eq("email", data.user.email)
+        //     .single();
 
         //   user.value = {
         //     email: userWithEmail.email,

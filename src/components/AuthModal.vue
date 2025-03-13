@@ -61,7 +61,7 @@ const title = props.isMember ? "登入" : "註冊";
                 placeholder="名稱"
             />
             <a-input class="auth-input" v-model:value="userCredentials.email" placeholder="信箱" />
-            <a-input class="auth-input" v-model:value="userCredentials.password" placeholder="密碼" />
+            <a-input-password class="auth-input" v-model:value="userCredentials.password" placeholder="密碼" />
         </div>
         <div class="spinner" v-else>
             <a-spin size="large" />
