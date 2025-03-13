@@ -24,9 +24,8 @@ provide("reload", reload);
     <RouterView v-if="isRouterAlive" />
 </template>
 
-<style scoped>
-body,
-html {
+<style>
+body {
     margin: 0;
     padding: 0;
 }

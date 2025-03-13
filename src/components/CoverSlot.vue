@@ -1,10 +1,11 @@
 <script setup>
 
 const { from } = defineProps(["from"]);
+const background = from == "Home" ? "/pawel-czerwinski-home-cover.jpg" : "/pawel-czerwinski-history-cover.jpg";
 </script>
 
 <template>
-    <div class="cover" >
+    <div class="cover" :style="{ backgroundImage: `url(${background})` }">
         <div class="cover-title">
             <h2>自我評估問卷</h2>
             <slot name="cover-title">
@@ -17,7 +18,6 @@ const { from } = defineProps(["from"]);
 
 <style scoped>
 .cover {
-    background-image: url(/pawel-czerwinski-home-cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

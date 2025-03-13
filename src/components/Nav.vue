@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
-import { ref, reactive, inject } from "vue";
+import { ref, reactive } from "vue";
 import { storeToRefs } from "pinia";
 
 import Container from "./Container.vue";
@@ -63,24 +63,27 @@ const handleOk = async () => {
 <template>
     <ALayoutHeader :style="headerStyle">
         <Container>
-            <div class="nav-container">
-                <div class="left-content">
-                    <RouterLink to="/">首頁</RouterLink>
-                </div>
-                <div v-if="!loadingUser" class="nav-button">
-                    <div class="right-content" v-if="!user">
-                        <AuthModal :isMember="false" :style="'text'"></AuthModal>
-                        <AuthModal :isMember="true" :style="'text'"></AuthModal>
+            <div class="position-absolute">
+                <div class="nav-container">
+                    <div class="left-content">
+                        <RouterLink to="/">首頁</RouterLink>
                     </div>
-                    <div class="right-content" v-else>
-                        <AButton type="text" @click="goToHistory">歷史紀錄</AButton>
-                        <AButton type="text" @click="handleProfile">個人資料</AButton>
-                        <AButton type="text" @click="handleLogout">登出</AButton>
+                    <div v-if="!loadingUser" class="nav-button">
+                        <div class="right-content" v-if="!user">
+                            <AuthModal :isMember="false" :style="'text'"></AuthModal>
+                            <AuthModal :isMember="true" :style="'text'"></AuthModal>
+                        </div>
+                        <div class="right-content" v-else>
+                            <AButton type="text" @click="goToHistory">歷史紀錄</AButton>
+                            <AButton type="text" @click="handleProfile">個人資料</AButton>
+                            <AButton type="text" @click="handleLogout">登出</AButton>
+                        </div>
                     </div>
                 </div>
             </div>
         </Container>
     </ALayoutHeader>
+
     <a-modal v-model:open="open" title="個人資料">
         <a-form
             :model="formState"
@@ -110,11 +113,15 @@ const handleOk = async () => {
     </a-modal>
 </template>
 <style scoped>
+.position-absolute {
+    position: absolute;
+}
 .nav-container {
     z-index: 10;
     display: flex;
     justify-content: space-between;
     position: static;
+    width: 80vw;
 }
 
 .left-content {
